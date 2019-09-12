@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js"></script>
+    <script async src="js/main.js"></script>
+    <title>Корзина</title>
+</head>
+<body>
+    <div class="main"> 
+            <header class="header">
+            <div class="header-img">
+                <img src="img/logo.jpg" alt="movavie">
+            </div>
+            </header>
+        <div class="wrapper">
+            <div class="container">
+                <div class="basket">
+                    <div class="basket-header">
+                        <div class="basket-header-img">
+                            <img src="img/basket.svg" alt="basket">
+                        </div>
+                        <div class="basket-header-title">Корзина</div>
+                    </div>
+                <div class="basket-order-main">
+                    <div class="basket-order basket-order1"></div>
+                    <div class="basket-order basket-order2"></div>
+                    <div class="basket-order basket-order3"></div>
+                    <div class="basket-order basket-order4"></div>
+                    <div class="basket-order basket-order5"></div>
+                </div>
+                    <div class="basket-price">
+                        <p class="basket-price__all">Всего: <span>0 руб.</span></p>
+                    </div>
+                <div class="basket-btn">
+                    <button class="item-shop-price__btn item-shop-price__btn_bask">Оформить заказ</button>
+                </div>
+                </div>
+                <div class="item-shop">
+                    <div class="item-shop-img">
+                        <img src="img/box1.png" alt="video_package">
+                    </div>
+                    <div class="item-shop-text">
+                        <h2 class="item-shop-text__title item-shop-text__title1" >Пакет видеопрограмм</h2>
+                        <p class="item-shop-text__desc">Пакет лучших программ для работы 
+                            с видео!  Редактируйте на монтажном столе. Конвертируйте в любые 
+                            форматы. Создавайте слайд-шоу. Нарезайте видео. Захватывайте видео
+                            с экрана, камер и 
+                            ТВ-тюнера. Записывайте DVD и диски Blu-ray.
+                            </p>
+                    </div>
+                    <div class="item-shop-price item-shop-price_margin">
+                        <p class="item-shop-price__price item-shop-price__price1">1990 руб</p>
+                        <button class="item-shop-price__btn" data-item="1">В корзину!</button>
+                    </div>
+                </div>
+                <div class="item-shop">
+                        <div class="item-shop-img">
+                            <img src="img/box2.png" alt="video_package">
+                        </div>
+                        <div class="item-shop-text">
+                            <h2 class="item-shop-text__title item-shop-text__title2">Фотостудия Movavi</h2>
+                            <p class="item-shop-text__desc">Полный набор инструментов для
+                                легкой фотообработки. Настраивайте параметры изображения
+                                вручную и улучшайте качество автоматически, добавляйте
+                                крутые фильтры и надписи. Обрезайте, отражайте и
+                                поворачивайте кадр, изменяйте размер фото. Удаляйте с фото 
+                                лишние объекты и заменяйте скучные фоны. Обрабатывайте папки
+                                с фото в пакетном режиме, создавайте слайд-шоу с музыкой и
+                                переходами.
+                                </p>
+                        </div>
+                        <div class="item-shop-price">
+                            <p class="item-shop-price__price item-shop-price__price2">1890 руб</p>
+                            <button class="item-shop-price__btn" data-item="2">В корзину!</button>
+                        </div>
+                </div>
+                <div class="item-shop">
+                        <div class="item-shop-img">
+                            <img src="img/box3.png" alt="video_package">
+                        </div>
+                        <div class="item-shop-text">
+                            <h2 class="item-shop-text__title item-shop-text__title3">Movavi Фоторедактор</h2>
+                            <p class="item-shop-text__desc">Улучшайте качество фото автоматически и вручную.
+                                Настраивайте резкость, контраст и цветность. Удаляйте с фотографий объекты,
+                                случайно попавшие в кадр. Заменяйте фон изображения. Добавляйте надписи. Выделяйте
+                                элементы при помощи удобных инструментов – кисти, волшебной палочки или лассо.
+                                Используйте штамп, чтобы устранять мелкие дефекты изображений. 
+                                </p>
+                        </div>
+                        <div class="item-shop-price">
+                            <p class="item-shop-price__price item-shop-price__price3">990 руб</p>
+                            <button class="item-shop-price__btn" data-item="3">В корзину!</button>
+                        </div>
+                </div>
+                <div class="item-shop">
+                        <div class="item-shop-img">
+                            <img src="img/box4.png" alt="video_package">
+                        </div>
+                        <div class="item-shop-text">
+                            <h2 class="item-shop-text__title item-shop-text__title4">Movavi Пакетный фоторедактор</h2>
+                            <p class="item-shop-text__desc">Обрабатывайте любое количество фотографий
+                                одним нажатием кнопки – уменьшайте целые фотоальбомы, переименовывайте файлы,
+                                конвертируйте формат и улучшайте качество изображений в пакетном режиме.
+                                Теперь вам не придется сохранять каждый файл по отдельности: 
+                                просто примените изменения ко всем 
+                                фото сразу и экспортируйте их с новыми настройками!
+                                </p>
+                        </div>
+                        <div class="item-shop-price">
+                            <p class="item-shop-price__price item-shop-price__price4">490 руб</p>
+                            <button class="item-shop-price__btn" data-item="4">В корзину!</button>
+                        </div>
+                </div>
+                <div class="item-shop item-shop_border">
+                        <div class="item-shop-img">
+                            <img src="img/box5.png" alt="video_package">
+                        </div>
+                        <div class="item-shop-text">
+                            <h2 class="item-shop-text__title item-shop-text__title5">Захват видео с экрана</h2>
+                            <p class="item-shop-text__desc">Записывайте все, что происходит
+                                на экране вашего монитора: видеочаты, работу в программах и
+                                интернет-браузерах и многое другое. Сохраняйте скринкасты в
+                                любые популярные форматы и для мобильных устройств.
+                                </p>
+                        </div>
+                        <div class="item-shop-price">
+                            <p class="item-shop-price__price item-shop-price__price5">1490 руб</p>
+                            <button class="item-shop-price__btn" data-item="5">В корзину!</button>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>
