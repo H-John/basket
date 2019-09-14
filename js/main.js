@@ -8,20 +8,16 @@ $(document).ready(function(){
 var price = 0;
 
 $('.item-shop-price__btn').on('click',function(){
-    var num = $(this).data('item');   
-    // Цена товара 
-    var priceNum = parseInt($('.price' + num).html())
-    price += priceNum
+    var num = $(this).data('item');
+    if ($('.basket-order'+num).children().length)
+	{
+		alert('Товар уже в корзине!');
+		return;
+	}
+    var priceNum = parseInt($('.price' + num).html());
+    price += priceNum;
     // добавляем крестик
-    var close = $('.basket-order'+num).html('<img src="img/close.png" alt=""></img>');
-    // очистка корзины от товаров
-    $(close).click(function(){
-        $('.basket-order'+num).empty();
-        // Когда добавляю один и тот же товар, а потом удаляю, то цена уходит
-        // в минус
-        price -= priceNum
-        $('.price-all').html(price + 'руб.');
-    });
+    $('.basket-order'+num).html('<img src="img/close.png" alt=""></img>');
     // По нажатию в корзину, определяет data-item и клонирует
     // в корзину
     $('.item-shop-text__title' + num).clone()
@@ -32,5 +28,13 @@ $('.item-shop-price__btn').on('click',function(){
     .css({'font-size':'12px','margin':'0'})
     .appendTo('.basket-order'+num);
     // Выводим цену в корзину
-    $('.price-all').html(price + 'руб.');
+    $('.price-all').html(price + ' руб.');
+});
+
+
+$('.basket-order').click(function(){	
+	var priceNum = $(this).find('span').html();
+	$(this).empty();
+	price -= priceNum;
+	$('.price-all').html(price + 'руб.');
 });
