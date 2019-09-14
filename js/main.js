@@ -5,8 +5,8 @@ $(document).ready(function(){
 		offset_top: -15
 	});
 });
-
 var price = 0;
+
 $('.item-shop-price__btn').on('click',function(){
     var num = $(this).data('item');   
     // Цена товара 
@@ -14,10 +14,11 @@ $('.item-shop-price__btn').on('click',function(){
     price += priceNum
     // добавляем крестик
     var close = $('.basket-order'+num).html('<img src="img/close.png" alt=""></img>');
-    // Очистка корзины от товаров
+    // очистка корзины от товаров
     $(close).click(function(){
         $('.basket-order'+num).empty();
-        // Цена при удалении
+        // Когда добавляю один и тот же товар, а потом удаляю, то цена уходит
+        // в минус
         price -= priceNum
         $('.price-all').html(price + 'руб.');
     });

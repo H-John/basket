@@ -168,8 +168,17 @@ button {
 }
 
 .item-shop-price__btn_bask {
-  background-color: #29d807;
   margin: 18px auto 16px;
+  border: none;
+  background-color: #29d807;
+  border-radius: 6px;
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 17px;
+  letter-spacing: 0.7px;
 }
 
 footer {
